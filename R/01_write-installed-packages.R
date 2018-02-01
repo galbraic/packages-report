@@ -17,8 +17,10 @@ pkg <- pkg[, c("Package", "LibPath", "Version", "Priority", "Built")]
 ## YES overwrite the file that is there now
 ## that came from me (Jenny)
 ## it an example of what yours should look like
-write.csv(pkg, file=here("data", "installed-packages.csv"),
-          quote = FALSE, row.names = FALSE)
+write.csv(pkg,
+          file=here("data", "installed-packages.csv"),
+          quote = FALSE,
+          row.names = FALSE)
 
 ## when this script works, stage & commit it and the csv file
 ## PUSH!
